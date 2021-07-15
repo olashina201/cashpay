@@ -3,10 +3,10 @@ import styled from "styled-components";
 import "../../Authentication/authentication.css";
 
 const Section = styled.section`
-  position: relative;
+  position: absolute;
   width: 450px;
   height: auto;
-  margin-top: 4em;
+  margin-top: 0;
   padding: 2em;
   left: 50%;
   transform: translateX(-50%);
@@ -50,9 +50,14 @@ const Button = styled.button`
     width: 100%;
 `;
 
-function Send() {
+const CloseIcon = styled.a`
+  position: absolute;
+`;
+
+function Send({closeModal}) {
   return (
     <Section>
+      <CloseIcon onClick={() => {closeModal(false)}}>X</CloseIcon>
       <Text>Send Money</Text>
       <form>
         <Input type="number" placeholder="Account Number" />

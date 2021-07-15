@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsForwardFill } from "react-icons/bs";
 import { AiOutlineSend } from "react-icons/ai";
 import styled from "styled-components";
+import Send from "../containers/Send";
 
 const Section = styled.section`
   display: flex;
@@ -31,8 +32,10 @@ const Span = styled.span`
 `;
 
 function PaymentList() {
+  const [openModal, setOpenModal] = useState(false)
   return (
     <Section>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -40,13 +43,17 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
-      <FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
+      <FlexContainer onClick={() => {setOpenModal(true)}}>
         <AiOutlineSend />
         <Span>
           <h4>Fund Wallet</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -54,6 +61,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -61,6 +70,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -68,6 +79,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -75,6 +88,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -82,6 +97,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -89,6 +106,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
@@ -96,6 +115,8 @@ function PaymentList() {
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
+      </a>
+      { openModal && <Send closeModal={setOpenModal} /> }
     </Section>
   );
 }

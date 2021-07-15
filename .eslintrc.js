@@ -21,6 +21,7 @@ module.exports = {
         "comma-dangle": ["error", "never"],
         "no-param-reassign": ["error", { props: false }],
         // eslint-disable-next-line comma-dangle
+        "react/prop-types": "off",
         quotes: ["error", "double"],
     }
 };
