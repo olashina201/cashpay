@@ -1,24 +1,81 @@
 import React from "react";
-import { MdNotifications } from "react-icons/md";
+import { BsForwardFill } from "react-icons/bs";
+import { AiOutlineSend } from "react-icons/ai";
+import styled from "styled-components";
+
+const Section = styled.section`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  margin: 1em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const FlexContainer = styled.div`
+  background-color: #00c3f8;
+  border-radius: .4em;
+  padding: .1em 1em;
+  margin: .2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Span = styled.span`
+  margin-left: 1em;
+  margin-right: 2em;
+`;
 
 function PaymentList() {
   return (
-    <div className="info-box-container">
-      <div className="info-box">
-        <img src={MdNotifications} />
-        <div className="info-content">
-          <span className="header">Money in</span>
-          <span className="value">$10,320</span>
-        </div>
-      </div>
-      <div className="info-box">
-        <img src={MdNotifications} />
-        <div className="info-content">
-          <span className="header">Money Out</span>
-          <span className="value">$4,628</span>
-        </div>
-      </div>
-    </div>
+    <Section>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>Send Money</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>Fund Wallet</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>Withdraw</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>School Bills</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>CableTv Bills</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h3>PHCN Bill</h3>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+    </Section>
   );
 }
 

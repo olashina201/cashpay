@@ -8,7 +8,7 @@ import { GrTransaction } from "react-icons/gr";
 function NavBar() {
   return (
     <nav className="navbar">
-      <a href="#" className="navbar-brand">
+      <a href="/dashboard" className="navbar-brand">
         <span><h1>VERIFY</h1></span>
       </a>
       <ul className="navbar-nav">

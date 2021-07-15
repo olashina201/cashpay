@@ -4,6 +4,7 @@ import Tab from "./components/Tab";
 import Header from "./Header";
 import Aside from "./Aside";
 import PaymentList from "./components/PaymentList";
+import Contacts from "./components/Contacts";
 
 function Payments() {
   return (
@@ -16,6 +17,7 @@ function Payments() {
         <div className="wrapper">
           <section role="region">
             <PaymentList />
+            <Contacts />
           </section>
           <Aside />
         </div>
