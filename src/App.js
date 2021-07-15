@@ -6,6 +6,7 @@ import Register from "./Authentication/Register";
 import MainView from "./dashboard/MainView";
 import Payments from "./dashboard/Payments";
 import Transactions from "./dashboard/components/Transactions";
+import Send from "./dashboard/containers/Send";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/dashboard" component={MainView} />
           <Route exact path="/payment" component={Payments} />
           <Route exact path="/transactions" component={Transactions} />
+          <Route exact path="/send" component={Send} />
         </Switch>
       </Router>
     </>
