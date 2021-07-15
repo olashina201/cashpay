@@ -11,7 +11,7 @@ main {
     width: 2.5em;
     height: 2.5em;
     margin: -3em;
-    background-color: var(--blue-pantone);
+    background-color: #00c3f8;
 }
 
 .mainRadiusBottom {

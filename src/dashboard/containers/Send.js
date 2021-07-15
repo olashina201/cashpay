@@ -10,7 +10,7 @@ const Section = styled.section`
   padding: 2em;
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
+  background: #00c3f8;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);

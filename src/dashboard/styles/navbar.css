@@ -14,7 +14,7 @@ h1{
     height: 100%;
     width: var(--navbar-shrinked);
     position: fixed;
-    background-color: var(--blue-pantone);
+    background-color: #00c3f8;
     padding-left: .1em;
     transition: 0.5s;
     display: flex;
