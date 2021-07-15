@@ -2,8 +2,8 @@ import React from "react";
 import "./styles/navbar.css";
 import { FaCcMastercard, FaWallet } from "react-icons/fa";
 import { HiDocumentDuplicate } from "react-icons/hi";
-import { AiOutlineBarChart } from "react-icons/ai";
-import { GrTransaction } from "react-icons/gr";
+import { MdSend } from "react-icons/md";
+import { AiOutlineTransaction } from "react-icons/ai";
 
 function NavBar() {
   return (
@@ -31,15 +31,15 @@ function NavBar() {
         <li>
           <a href="/payment">
             <i>
-              <AiOutlineBarChart />
+              <MdSend />
             </i>
-            <span>Charts</span>
+            <span>Payment</span>
           </a>
         </li>
         <li>
           <a href="/transactions">
             <i>
-              <GrTransaction />
+              <AiOutlineTransaction />
             </i>
             <span>Transactions</span>
           </a>

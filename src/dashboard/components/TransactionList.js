@@ -53,7 +53,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -65,7 +65,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -77,7 +77,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -89,7 +89,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -101,7 +101,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -113,7 +113,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
@@ -125,7 +125,7 @@ function TransactionList() {
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
         </Span>
-        <h5>$34.5</h5>
+        <h5>-$34.5</h5>
         <Date>
           <Text>Tue. 12 June, 2021</Text>
           <Text>11:46am</Text>
