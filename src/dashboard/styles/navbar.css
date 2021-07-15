@@ -5,12 +5,16 @@
     --navbar-li-padding-quarter: 2em;
 }
 
+h1{
+    font-family: 'Lobster',Arial, Helvetica, sans-serif;
+}
+
 .navbar {
     font-weight: 600;
     height: 100%;
     width: var(--navbar-shrinked);
     position: fixed;
-    background-color: var(--ghost-white);
+    background-color: var(--blue-pantone);
     padding-left: .1em;
     transition: 0.5s;
     display: flex;
@@ -33,7 +37,7 @@ ul{
     display: flex;
     align-items: center;
     transition: 0.3s;
-    color: var(--space-cadet);
+    color: var(--ghost-white);
 }
 
 .navbar i {
@@ -41,7 +45,7 @@ ul{
 }
 
 .navbar a.navbar-brand {
-    color: var(--red-ryb);
+    color: var(--ghost-white);
 }
 
 .navbar a.navbar-brand,
@@ -108,7 +112,7 @@ a{
 
 @media screen and (max-height: 450px) {
     .navbar {
-        padding-top: 15px;
+        padding-top: 55px;
     }
     .navbar a {
         font-size: 18px;

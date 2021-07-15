@@ -5,7 +5,7 @@ function Register() {
   return (
     <div className="form-modal">
       <div id="signup-form">
-      <h1 style={{ textAlign: "center", paddingTop: "20px"}}>CASHPAY</h1>
+      <h1 style={{ textAlign: "center", paddingTop: "20px"}}>VERIFY</h1>
         <form>
           <input type="text" placeholder="First Name" />
           <input type="text" placeholder="Last Name" />
