@@ -29,7 +29,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a>
+          <a href="/payment">
             <i>
               <AiOutlineBarChart />
             </i>
@@ -37,7 +37,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a>
+          <a href="/transactions">
             <i>
               <GrTransaction />
             </i>

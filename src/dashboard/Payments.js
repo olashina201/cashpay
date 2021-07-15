@@ -5,6 +5,7 @@ import Header from "./Header";
 import Aside from "./Aside";
 import PaymentList from "./components/PaymentList";
 import Contacts from "./components/Contacts";
+import BeneficiaryList from "./components/BeneficiaryList";
 
 function Payments() {
   return (
@@ -18,6 +19,7 @@ function Payments() {
           <section role="region">
             <PaymentList />
             <Contacts />
+            <BeneficiaryList />
           </section>
           <Aside />
         </div>
