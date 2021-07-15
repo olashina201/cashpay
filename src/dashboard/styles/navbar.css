@@ -1,0 +1,117 @@
+:root {
+    --navbar-expanded: .2em;
+    --navbar-shrinked: 12.4em;
+    --navbar-li-padding: .8em;
+    --navbar-li-padding-quarter: 2em;
+}
+
+.navbar {
+    font-weight: 600;
+    height: 100%;
+    width: var(--navbar-shrinked);
+    position: fixed;
+    background-color: var(--ghost-white);
+    padding-left: .1em;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+}
+
+.navbar li {
+    padding: var(--navbar-li-padding);
+}
+ul{
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    color: var(--space-cadet);
+}
+
+.navbar i {
+    font-size: 1.5rem;
+}
+
+.navbar a.navbar-brand {
+    color: var(--red-ryb);
+}
+
+.navbar a.navbar-brand,
+.navbar a.navbar-footer {
+    padding: var(--navbar-li-padding-quarter) var(--navbar-li-padding-quarter) var(--navbar-li-padding-quarter) var(--navbar-li-padding);
+}
+
+.navbar a:hover {
+    color: var(--red-ryb);
+}
+
+.navbar span {
+    margin-left: 1em;
+    font-size: 1rem;
+}
+
+.navbar-nav span {
+    vertical-align: middle;
+}
+
+main {
+    transition: margin-left 0.5s;
+    margin-left: var(--navbar-shrinked);
+}
+
+body.navbar-expanded .navbar {
+    width: var(--navbar-expanded);
+}
+
+body.navbar-expanded main {
+    margin-left: var(--navbar-expanded);
+}
+
+body.navbar-expanded li.active {
+    margin-left: 4.5em;
+    transition: .5s;
+}
+
+body.navbar-shrinked .navbar {
+    width: var(--navbar-shrinked);
+}
+
+body.navbar-shrinked main {
+    margin-left: var(--navbar-shrinked);
+}
+
+body.navbar-shrinked li.active {
+    margin: 0;
+    transition: .5s;
+}
+
+.navbar .active {
+    color: var(--red-ryb);
+}
+
+.navbar .active a {
+    position: fixed;
+    color: var(--red-ryb);
+}
+
+a{
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {
+        padding-top: 15px;
+    }
+    .navbar a {
+        font-size: 18px;
+    }
+}
+
