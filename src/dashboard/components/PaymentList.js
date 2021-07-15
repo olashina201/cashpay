@@ -15,7 +15,7 @@ const Section = styled.section`
 `;
 
 const FlexContainer = styled.div`
-  background-color: #00c3f8;
+  background-color: #F7F8FFff;
   border-radius: .4em;
   padding: .1em 1em;
   margin: .2em;
@@ -36,42 +36,63 @@ function PaymentList() {
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>Send Money</h3>
+          <h4>Send Money</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>Fund Wallet</h3>
+          <h4>Fund Wallet</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>Withdraw</h3>
+          <h4>Withdraw</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>School Bills</h3>
+          <h4>School Bills</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>CableTv Bills</h3>
+          <h4>CableTv Bills</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h3>PHCN Bill</h3>
+          <h4>PHCN Bill</h4>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h4>Airtime Topup</h4>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h4>PHCN Bill</h4>
+        </Span>
+        <i><BsForwardFill /></i>
+      </FlexContainer>
+      <FlexContainer>
+        <AiOutlineSend />
+        <Span>
+          <h4>PHCN Bill</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
