@@ -84,34 +84,7 @@ function PaymentList() {
       <FlexContainer>
         <AiOutlineSend />
         <Span>
-          <h4>PHCN Bill</h4>
-        </Span>
-        <i><BsForwardFill /></i>
-      </FlexContainer>
-      </a>
-      <a onClick={() => {setOpenModal(true)}}>
-      <FlexContainer>
-        <AiOutlineSend />
-        <Span>
-          <h4>Airtime Topup</h4>
-        </Span>
-        <i><BsForwardFill /></i>
-      </FlexContainer>
-      </a>
-      <a onClick={() => {setOpenModal(true)}}>
-      <FlexContainer>
-        <AiOutlineSend />
-        <Span>
-          <h4>PHCN Bill</h4>
-        </Span>
-        <i><BsForwardFill /></i>
-      </FlexContainer>
-      </a>
-      <a onClick={() => {setOpenModal(true)}}>
-      <FlexContainer>
-        <AiOutlineSend />
-        <Span>
-          <h4>PHCN Bill</h4>
+          <h4>Airtime</h4>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>

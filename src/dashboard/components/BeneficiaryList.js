@@ -55,7 +55,6 @@ function BeneficiaryList() {
         </Icon>
         <Span>
           <h4 style={{ margin: "0" }}>JhayKlaus</h4>
-          <Text>to: Olashina Quadri</Text>
         </Span>
         <Date>
           <Text>Tue. 12 June, 2021</Text>

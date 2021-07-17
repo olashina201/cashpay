@@ -85,7 +85,7 @@ nav.navbar-top a {
 }
 
 .notification-profile .profile-pic {
-    background-image: url('../img/tweet-image.jpeg');
+    background-image: url('../../assets/images/me.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -.5em;

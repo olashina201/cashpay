@@ -43,10 +43,34 @@ const Icon = styled.i`
 const Text = styled.h6`
   margin: 0;
 `;
+
+const Head = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+`;
+
+const Button = styled.button`
+  width: 10em;
+  height: 2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 2em;
+  background-color: #3326ae;
+  color: white;
+  font-size: 15px;
+`;
+
 function TransactionList() {
   return (
     <Section>
-      <h3>Recent Transactions</h3>
+      <Head>
+        <h3>Recent Transactions</h3>
+        <Button>Download PDF</Button>
+      </Head>
       <FlexContainer>
         <Icon><GiShoppingCart /></Icon>
         <Span>

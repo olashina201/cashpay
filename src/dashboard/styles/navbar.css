@@ -112,7 +112,8 @@ a{
 
 @media screen and (max-height: 450px) {
     .navbar {
-        padding-top: 55px;
+        margin-top: 559px;
+        width: 100%;
     }
     .navbar a {
         font-size: 18px;

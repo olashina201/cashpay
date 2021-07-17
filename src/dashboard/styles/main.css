@@ -134,24 +134,6 @@ section[role="region"] {
 
 /* STATISTICS */
 
-.statistics {
-    margin-right: 2em;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5em;
-    background-color: var(--ghost-white);
-    border-radius: .75em;
-    padding: 1.5em;
-}
-
-.statistics header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 1em;
-}
-
 .statistics h1 {
     font-weight: 600;
 }
@@ -232,7 +214,7 @@ section[role="region"] {
 }
 
 .tweet .profileImage {
-    background-image: url('../img/tweet-image.jpeg');
+    background-image: url('../../assets/images/me.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 2em;
@@ -303,7 +285,7 @@ section[role="region"] {
 }
 
 .chartContainer {
-    height: 8em;
+    height: 10em;
 }
 
 @media screen and (max-width: 1300px) {

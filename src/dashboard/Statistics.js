@@ -1,20 +1,61 @@
 import React from "react";
+import styled from "styled-components";
+import BarCharts from "../charts/BarCharts";
 
+const Statistic = styled.div`
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  background-color: var(--ghost-white);
+  border-radius: 0.75em;
+  padding: 1.5em;
+`;
+
+const Header = styled.header`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+`;
+
+const Select = styled.select`
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  color: var(--blue-pantone);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.75em 3.5em 0.75em 1em;
+  border-radius: 1.5em;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+`;
+
+const ChartContainer = styled.div`
+  color: white;
+`;
 function Statistics() {
   return (
-    <div className="statistics">
-      <header>
+    <Statistic>
+      <Header>
         <h1>Statistics</h1>
-        <select>
+        <Select>
           <option value="Year">Year</option>
           <option value="Month">Month</option>
           <option value="Day">Day</option>
-        </select>
-      </header>
-      <div className="chartContainer">
-        <canvas id="statisticsChart"></canvas>
-      </div>
-    </div>
+        </Select>
+      </Header>
+      <ChartContainer>
+        <BarCharts />
+      </ChartContainer>
+    </Statistic>
   );
 }
 

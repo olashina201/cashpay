@@ -1,4 +1,5 @@
 import React from "react";
+import LineCharts from "../../charts/LineChart";
 
 function BottomChart() {
   return (
@@ -8,18 +9,15 @@ function BottomChart() {
           <h1>Spent time</h1>
         </header>
         <div className="chartContainer">
-          <canvas
-            id="spentTimeChart"
-            style={{ backgroundColor: "rgba(0,0,0, .0);" }}
-          ></canvas>
+          <LineCharts />
         </div>
       </div>
       <div className="tweet">
         <div className="profileContainer">
           <div className="profileImage"></div>
           <div className="profileInfo">
-            <span className="name">Lilly Danovan</span>
-            <span className="title">Businness trainer</span>
+            <span className="name">Olashina Quadri</span>
+            <span className="title">Web Developer</span>
           </div>
         </div>
         <h1>How to properly manage your personal budget?</h1>

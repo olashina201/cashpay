@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import "../../Authentication/authentication.css";
+import Confirmation from "../containers/Confirmation";
 
 const Section = styled.section`
   position: absolute;
@@ -14,6 +15,9 @@ const Section = styled.section`
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const Input = styled.input`
@@ -23,6 +27,21 @@ const Input = styled.input`
   padding: 1.2em 1.7em 1.2em 1.7em;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
+  border-radius: 20px;
+  border: none;
+  background: #ebebeb;
+  outline: none;
+  font-weight: bold;
+  transition: 0.4s;
+`;
+
+const Select = styled.select`
+  position: relative;
+  width: 100%;
+  font-size: 1em;
+  padding: 1.2em 1.7em 1.2em 1.7em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
   border-radius: 20px;
   border: none;
   background: #ebebeb;
@@ -55,6 +74,7 @@ const CloseIcon = styled.a`
 `;
 
 function Send({closeModal}) {
+  const [confirm, setConfirm] = useState(false)
   return (
     <Section>
       <CloseIcon onClick={() => {closeModal(false)}}>X</CloseIcon>
@@ -62,17 +82,24 @@ function Send({closeModal}) {
       <form>
         <Input type="number" placeholder="Account Number" />
         <Input type="text" placeholder="Account Name" />
-        <Input type="text" placeholder="Bank" />
+        <Select>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+        </Select>
         <Input type="number" placeholder="Amount" />
-        <Button type="button" className="btn signup">
+        <Button type="button" className="btn signup" onClick={() => {setConfirm(true)}}>
           Send
         </Button>
         <p>
           Clicking <strong>Send</strong> you understand that
-          this transaction cannot be refunded <a href="javascript:void(0)">terms of services</a>.
+          this transaction cannot be refunded <a href="/terms">terms of services</a>.
         </p>
         <hr />
       </form>
+      { confirm && <Confirmation closeConfirm={setConfirm} /> }
     </Section>
   );
 }
