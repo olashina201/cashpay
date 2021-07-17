@@ -313,11 +313,12 @@ section[role="region"] {
     }
     .bottomBox {
         margin-right: 1em;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     .tweet {
         margin-left: 0.75em;
         font-size: 1rem;
+        margin-top: 1em;
     }
     .tweetBadge {
         font-size: .75rem;

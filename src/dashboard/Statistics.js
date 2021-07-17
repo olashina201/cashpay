@@ -11,6 +11,10 @@ const Statistic = styled.div`
   border-radius: 0.75em;
   padding: 1.5em;
   padding-top: .2em;
+  @media (max-width: 768px) {
+    margin-right: 0px;
+    margin-bottom: 1em;
+  }
 `;
 
 const Header = styled.header`
