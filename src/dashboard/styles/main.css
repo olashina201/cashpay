@@ -200,6 +200,7 @@ section[role="region"] {
 
 .tweet {
     margin-left: 1.5em;
+    width: 100%;
 }
 
 .tweet .profileContainer {
@@ -284,7 +285,7 @@ section[role="region"] {
     margin-left: 1em;
 }
 
-.chartContainer {
+.chartContaine {
     height: 10em;
 }
 

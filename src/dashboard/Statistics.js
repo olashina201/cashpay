@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BarCharts from "../charts/BarCharts";
+import TinyAreaCharts from "../charts/TinyAreaCharts";
 
 const Statistic = styled.div`
   margin-right: 2em;
@@ -10,6 +10,7 @@ const Statistic = styled.div`
   background-color: var(--ghost-white);
   border-radius: 0.75em;
   padding: 1.5em;
+  padding-top: .2em;
 `;
 
 const Header = styled.header`
@@ -17,7 +18,7 @@ const Header = styled.header`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: .1em;
 `;
 
 const Select = styled.select`
@@ -39,7 +40,7 @@ const Select = styled.select`
 `;
 
 const ChartContainer = styled.div`
-  color: white;
+  height: 10em;
 `;
 function Statistics() {
   return (
@@ -53,7 +54,7 @@ function Statistics() {
         </Select>
       </Header>
       <ChartContainer>
-        <BarCharts />
+        <TinyAreaCharts />
       </ChartContainer>
     </Statistic>
   );

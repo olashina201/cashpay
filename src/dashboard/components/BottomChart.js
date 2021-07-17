@@ -8,7 +8,7 @@ function BottomChart() {
         <header>
           <h1>Spent time</h1>
         </header>
-        <div className="chartContainer">
+        <div className="chartContaine">
           <LineCharts />
         </div>
       </div>
