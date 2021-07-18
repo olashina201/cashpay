@@ -36,6 +36,7 @@ aside {
 
 aside .chartContainer {
     margin-top: 0em;
+    height: 10em;
 }
 
 aside .chartContainer span {

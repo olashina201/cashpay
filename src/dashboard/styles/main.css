@@ -444,7 +444,7 @@ section[role="search"] {
         font-size: 1rem;
     }
     main {
-        padding: 0;
+        padding: .75em;
     }
     main header {
         margin-top: 1em;
