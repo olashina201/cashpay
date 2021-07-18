@@ -7,7 +7,7 @@ const Statistic = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 1.5em;
-  background-color: var(--ghost-white);
+  background-color: var(--white);
   border-radius: 0.75em;
   padding: 1.5em;
   padding-top: .2em;

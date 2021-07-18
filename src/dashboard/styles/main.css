@@ -1,5 +1,5 @@
 main {
-    background-color: var(--white);
+    background-color: #f5f5fd;
     border-radius: 3em 0 0 3em;
     padding: 3em;
     height: 100%;
@@ -23,7 +23,7 @@ main {
     content: '';
     width: 2.5em;
     height: 2.5em;
-    background-color: var(--white);
+    background-color: #f5f5fd;
     position: absolute;
     border-top-left-radius: 2.5em;
 }
@@ -76,6 +76,10 @@ section[role="region"] {
     width: calc(100% - 15em);
 }
 
+
+section[role="search"] {
+    background-color: var(--white);
+}
 .info-box-container {
     display: flex;
     width: auto;
@@ -92,6 +96,7 @@ section[role="region"] {
     width: 100%;
     cursor: pointer;
     align-items: center;
+    background-color: var(--white);
 }
 
 .info-box.active {
@@ -187,6 +192,7 @@ section[role="region"] {
     -moz-box-shadow: 0px 7px 17px 3px rgba(243, 243, 255, 1);
     box-shadow: 0px 7px 17px 3px rgba(243, 243, 255, 1);
     border-radius: .75em;
+    background-color: var(--white);
 }
 
 .bottomBox .spentTime {
@@ -296,9 +302,10 @@ section[role="region"] {
         font-size: 1.5rem;
     }
     .info-box {
-        /* padding: .5em .75em; */
+        padding: 2em 1.5em;
         border-radius: .375em;
         margin-right: 1em;
+        height: 3.5em;
     }
     .info-box img {
         width: 1.5em;
@@ -357,6 +364,7 @@ section[role="region"] {
     }
     section[role="search"] {
         width: auto;
+        background-color: var(--white);
     }
     .wrapper aside {
         width: 100%;
