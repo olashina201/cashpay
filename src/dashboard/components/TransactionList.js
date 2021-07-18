@@ -14,7 +14,7 @@ const Section = styled.section`
 `;
 
 const FlexContainer = styled.div`
-  background-color: #F7F8FFff;
+  background-color: var(--white);
   border-radius: .4em;
   padding: .1em 1em;
   margin: .2em;

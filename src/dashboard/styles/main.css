@@ -73,7 +73,7 @@ main {
 
 section[role="region"] {
     height: 100%;
-    width: calc(100% - 15em);
+    width: calc(100% - 18em);
 }
 
 
@@ -135,34 +135,6 @@ section[role="search"] {
     font-weight: 600;
     font-size: 2rem;
 }
-
-
-/* STATISTICS */
-
-.statistics h1 {
-    font-weight: 600;
-}
-
-.statistics select {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
-    color: var(--blue-pantone);
-    font-weight: 700;
-    font-size: .8rem;
-    padding: .75em 3.5em .75em 1em;
-    border-radius: 1.5em;
-    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-    background-size: 5px 5px, 5px 5px, 1px 1.5em;
-    background-repeat: no-repeat;
-}
-
-#statisticsChart {
-    height: 10em;
-}
-
 
 /* SPENT TIME */
 
@@ -299,17 +271,20 @@ section[role="search"] {
     /* (1300px) */
     .info-box .info-content .value {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .info-box {
         padding: 2em 1.5em;
         border-radius: .375em;
         margin-right: 1em;
         height: 3.5em;
+        width: 15em;
+        margin: 0 auto;
     }
     .info-box img {
-        width: 1.5em;
-        height: 1.5em;
+        width: 2em;
+        height: 2em;
+        margin-right: 2em;
     }
     .info-box .info-content .header {
         margin-bottom: 0;
@@ -374,7 +349,7 @@ section[role="search"] {
         display: flex;
         justify-content: center;
     }
-    .cardContainer svg {
+    .cardContainer img {
         width: 20em;
     }
     .tabContainer {
@@ -395,13 +370,14 @@ section[role="search"] {
         position: fixed;
         margin: 0;
         flex-direction: row;
-        height: 2.75em;
+        height: 3.55em;
+        z-index: 1;
     }
     .navbar-nav {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 0em 1em;
+        padding: 0em 0em;
         align-items: center;
     }
     .navbar li {
@@ -410,6 +386,7 @@ section[role="search"] {
     main {
         margin-left: 0;
         border-radius: 0;
+        padding: 3em;
     }
     aside {
         display: none;
