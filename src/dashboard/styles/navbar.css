@@ -15,7 +15,7 @@ h1{
     width: var(--navbar-shrinked);
     position: fixed;
     background-color: #00c3f8;
-    padding-left: .1em;
+    padding-left: 0;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,8 @@ h1{
 }
 ul{
     list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
 }
 
 .navbar a {
@@ -63,7 +65,7 @@ ul{
 }
 
 .navbar-nav span {
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 main {

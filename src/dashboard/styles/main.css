@@ -365,7 +365,8 @@ section[role="search"] {
     }
     .navbar {
         bottom: 0;
-        width: 100%;
+        box-sizing: border-box;
+        width: 96.5%;
         padding: 0.1em;
         position: fixed;
         margin: 0;
