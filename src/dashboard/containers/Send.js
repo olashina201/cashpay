@@ -16,7 +16,7 @@ const Section = styled.section`
   border-bottom-right-radius: 30px;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
 `;
 
