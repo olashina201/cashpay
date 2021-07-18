@@ -30,6 +30,7 @@ const ImageContainer = styled.div`
   overflow-x: scroll;
   @media (max-width: 768px) {
     max-width: 100%;
+    overflow-x: scroll;
   }
 `;
 
