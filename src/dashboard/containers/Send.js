@@ -3,12 +3,6 @@ import styled from "styled-components";
 import "../../Authentication/authentication.css";
 import Confirmation from "../containers/Confirmation";
 
-const Wrapper = styled.div`
-  width: 100%;
-  background-color: #000;
-  position: relative;
-`;
-
 const Section = styled.section`
   position: absolute;
   width: 450px;
@@ -82,33 +76,31 @@ const CloseIcon = styled.a`
 function Send({closeModal}) {
   const [confirm, setConfirm] = useState(false)
   return (
-    <Wrapper>
-      <Section>
-        <CloseIcon onClick={() => {closeModal(false)}}>X</CloseIcon>
-        <Text>Send Money</Text>
-        <form>
-          <Input type="number" placeholder="Account Number" />
-          <Input type="text" placeholder="Account Name" />
-          <Select>
-            <option value="">First Bank</option>
-            <option value="">First Bank</option>
-            <option value="">First Bank</option>
-            <option value="">First Bank</option>
-            <option value="">First Bank</option>
-          </Select>
-          <Input type="number" placeholder="Amount" />
-          <Button type="button" className="btn signup" onClick={() => {setConfirm(true)}}>
-            Send
-          </Button>
-          <p>
-            Clicking <strong>Send</strong> you understand that
-            this transaction cannot be refunded <a href="/terms">terms of services</a>.
-          </p>
-          <hr />
-        </form>
-        { confirm && <Confirmation closeConfirm={setConfirm} /> }
-      </Section>
-    </Wrapper>
+    <Section>
+      <CloseIcon onClick={() => {closeModal(false)}}>X</CloseIcon>
+      <Text>Send Money</Text>
+      <form>
+        <Input type="number" placeholder="Account Number" />
+        <Input type="text" placeholder="Account Name" />
+        <Select>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+          <option value="">First Bank</option>
+        </Select>
+        <Input type="number" placeholder="Amount" />
+        <Button type="button" className="btn signup" onClick={() => {setConfirm(true)}}>
+          Send
+        </Button>
+        <p>
+          Clicking <strong>Send</strong> you understand that
+          this transaction cannot be refunded <a href="/terms">terms of services</a>.
+        </p>
+        <hr />
+      </form>
+      { confirm && <Confirmation closeConfirm={setConfirm} /> }
+    </Section>
   );
 }
 
