@@ -30,6 +30,9 @@ const FlexContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Span = styled.span`
