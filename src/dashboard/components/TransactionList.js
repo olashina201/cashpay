@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GiShoppingCart } from "react-icons/gi";
+import { AiOutlineTransaction } from "react-icons/ai";
 
 const Section = styled.section`
   display: flex;
@@ -72,7 +72,7 @@ function TransactionList() {
         <Button>Download PDF</Button>
       </Head>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -84,7 +84,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -96,7 +96,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -108,7 +108,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -120,7 +120,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -132,7 +132,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>
@@ -144,7 +144,7 @@ function TransactionList() {
         </Date>
       </FlexContainer>
       <FlexContainer>
-        <Icon><GiShoppingCart /></Icon>
+        <Icon><AiOutlineTransaction /></Icon>
         <Span>
           <h4 style={{margin: "0"}}>Send Money</h4>
           <Text>to: Olashina Quadri</Text>

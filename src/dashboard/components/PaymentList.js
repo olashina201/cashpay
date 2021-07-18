@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { BsForwardFill } from "react-icons/bs";
-import { AiOutlineSend } from "react-icons/ai";
 import styled from "styled-components";
 import Send from "../containers/Send";
+import sendMoney from "../../assets/images/exchange.png";
+import wallet from "../../assets/images/wallet.png";
+import withdrawal from "../../assets/images/withdrawal.png";
+import bill from "../../assets/images/receipt.png";
+import cable from "../../assets/images/cable-tv.png";
+import topup from "../../assets/images/up.png";
 
 const Section = styled.section`
   display: flex;
@@ -19,6 +24,7 @@ const FlexContainer = styled.div`
   background-color: var(--white);
   border-radius: .4em;
   padding: .1em 1em;
+  width: 14em;
   margin: .2em;
   display: flex;
   flex-direction: row;
@@ -37,7 +43,7 @@ function PaymentList() {
     <Section>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={sendMoney} />
         <Span>
           <h4>Send Money</h4>
         </Span>
@@ -46,7 +52,7 @@ function PaymentList() {
       </a>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer onClick={() => {setOpenModal(true)}}>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={wallet} />
         <Span>
           <h4>Fund Wallet</h4>
         </Span>
@@ -55,7 +61,7 @@ function PaymentList() {
       </a>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={withdrawal} />
         <Span>
           <h4>Withdraw</h4>
         </Span>
@@ -64,7 +70,7 @@ function PaymentList() {
       </a>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={bill} />
         <Span>
           <h4>School Bills</h4>
         </Span>
@@ -73,7 +79,7 @@ function PaymentList() {
       </a>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={cable} />
         <Span>
           <h4>CableTv Bills</h4>
         </Span>
@@ -82,7 +88,7 @@ function PaymentList() {
       </a>
       <a onClick={() => {setOpenModal(true)}}>
       <FlexContainer>
-        <AiOutlineSend />
+        <img style={{ width: "35px" }} src={topup} />
         <Span>
           <h4>Airtime</h4>
         </Span>

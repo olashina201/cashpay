@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GiShoppingCart } from "react-icons/gi";
+import man from "../../assets/images/man.png";
 
 const Section = styled.section`
   display: flex;
@@ -35,7 +35,7 @@ const Date = styled.span`
 `;
 
 const Icon = styled.i`
-  background-color: #3326ae;
+  background-color: #fff;
   color: #fff;
   padding: .4em;
   border-radius: 50%;
@@ -51,7 +51,7 @@ function BeneficiaryList() {
       <h3>Beneficiaries</h3>
       <FlexContainer>
         <Icon>
-          <GiShoppingCart />
+          <img style={{ width: "30px"}} src={man} />
         </Icon>
         <Span>
           <h4 style={{ margin: "0" }}>JhayKlaus</h4>
@@ -63,20 +63,7 @@ function BeneficiaryList() {
       </FlexContainer>
       <FlexContainer>
         <Icon>
-          <GiShoppingCart />
-        </Icon>
-        <Span>
-          <h4 style={{ margin: "0" }}>JhayKlaus</h4>
-          <Text>to: Olashina Quadri</Text>
-        </Span>
-        <Date>
-          <Text>Tue. 12 June, 2021</Text>
-          <Text>11:46am</Text>
-        </Date>
-      </FlexContainer>
-      <FlexContainer>
-        <Icon>
-          <GiShoppingCart />
+          <img style={{ width: "30px"}} src={man} />
         </Icon>
         <Span>
           <h4 style={{ margin: "0" }}>JhayKlaus</h4>
@@ -89,7 +76,20 @@ function BeneficiaryList() {
       </FlexContainer>
       <FlexContainer>
         <Icon>
-          <GiShoppingCart />
+          <img style={{ width: "30px"}} src={man} />
+        </Icon>
+        <Span>
+          <h4 style={{ margin: "0" }}>JhayKlaus</h4>
+          <Text>to: Olashina Quadri</Text>
+        </Span>
+        <Date>
+          <Text>Tue. 12 June, 2021</Text>
+          <Text>11:46am</Text>
+        </Date>
+      </FlexContainer>
+      <FlexContainer>
+        <Icon>
+          <img style={{ width: "30px"}} src={man} />
         </Icon>
         <Span>
           <h4 style={{ margin: "0" }}>JhayKlaus</h4>
