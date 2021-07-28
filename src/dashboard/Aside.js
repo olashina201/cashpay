@@ -3,7 +3,7 @@ import "./styles/aside.css";
 import { GiShoppingCart } from "react-icons/gi";
 import { BiTaxi } from "react-icons/bi";
 import card from "../dashboard/img/card.svg";
-import PieCharts from "../charts/PieChart";
+import Example from "../charts/PieChart2";
 
 function Aside() {
   return (
@@ -15,7 +15,7 @@ function Aside() {
       </div>
       <div className="chartContainer">
         <span>$5,600</span>
-        <PieCharts />
+        <Example />
       </div>
 
       <div className="header">
