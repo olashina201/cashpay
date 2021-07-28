@@ -48,7 +48,7 @@ function PaymentList() {
       <FlexContainer>
         <img style={{ width: "35px" }} src={sendMoney} />
         <Span>
-          <h4>Send Money</h4>
+          <h5>Send Money</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
@@ -57,7 +57,7 @@ function PaymentList() {
       <FlexContainer onClick={() => {setOpenModal(true)}}>
         <img style={{ width: "35px" }} src={wallet} />
         <Span>
-          <h4>Fund Wallet</h4>
+          <h5>Fund Wallet</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
@@ -66,7 +66,7 @@ function PaymentList() {
       <FlexContainer>
         <img style={{ width: "35px" }} src={withdrawal} />
         <Span>
-          <h4>Withdraw</h4>
+          <h5>Withdraw</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
@@ -75,7 +75,7 @@ function PaymentList() {
       <FlexContainer>
         <img style={{ width: "35px" }} src={bill} />
         <Span>
-          <h4>School Bills</h4>
+          <h5>School Bills</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
@@ -84,7 +84,7 @@ function PaymentList() {
       <FlexContainer>
         <img style={{ width: "35px" }} src={cable} />
         <Span>
-          <h4>CableTv Bills</h4>
+          <h5>CableTv Bills</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
@@ -93,7 +93,7 @@ function PaymentList() {
       <FlexContainer>
         <img style={{ width: "35px" }} src={topup} />
         <Span>
-          <h4>Airtime</h4>
+          <h5>Airtime</h5>
         </Span>
         <i><BsForwardFill /></i>
       </FlexContainer>
