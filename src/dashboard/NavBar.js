@@ -49,7 +49,7 @@ function NavBar() {
             <i>
               <FaCcMastercard />
             </i>
-            <span>Add Card</span>
+            <span>My Cards</span>
           </a>
         </li>
       </ul>
