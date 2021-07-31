@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import axios from "axios";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Money from "./Money";
@@ -43,6 +44,15 @@ function MainView() {
       }
     }
   }, []);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/profile")
+    .then((res) => {
+      console.log(res.data)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }, [])
 
   return (
     <div>
