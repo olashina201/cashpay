@@ -53,7 +53,7 @@ function Aside() {
         </div>
         <span className="spendMoney">-$142,00</span>
       </div>
-      <div className="transactionItem">
+      {/* <div className="transactionItem">
         <div className="imgItemContainer">
           <div className="iconContainer">
             <i>
@@ -66,7 +66,7 @@ function Aside() {
           </div>
         </div>
         <span className="spendMoney">-$24,99</span>
-      </div>
+      </div> */}
     </aside>
   );
 }
