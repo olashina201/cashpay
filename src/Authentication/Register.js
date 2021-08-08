@@ -21,15 +21,9 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast(
-      "account created successfully...\n check your email for confirmation",
-      {
-        position: toast.POSITION.TOP_RIGHT
-      }
-    );
     axios
-      .post("http://localhost:5000/api/signup", userData)
-      .then(() => {
+    .post("https://thawing-shore-17752.herokuapp.com/api/signup", userData)
+    .then(() => {
         toast("account created successfully...", {
           position: toast.POSITION.TOP_RIGHT
         });

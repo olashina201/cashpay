@@ -16,7 +16,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/api/signin", loginData)
+    axios.post("https://thawing-shore-17752.herokuapp.com/api/signin", loginData)
     .then((res) => {
       window.localStorage.setItem("token", res.data);
       history.push("/dashboard");
