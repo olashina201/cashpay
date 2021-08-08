@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./styles/navbar.css";
 import { FaCcMastercard, FaWallet } from "react-icons/fa";
 import { HiDocumentDuplicate } from "react-icons/hi";
@@ -6,6 +8,7 @@ import { MdSend } from "react-icons/md";
 import { AiOutlineTransaction } from "react-icons/ai";
 
 function NavBar() {
+  const notify = () => toast("coming soon... !");
   return (
     <nav className="navbar">
       <a href="/dashboard" className="navbar-brand">
@@ -45,7 +48,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a>
+          <a onClick={notify}>
             <i>
               <FaCcMastercard />
             </i>
@@ -56,6 +59,7 @@ function NavBar() {
       <a href="#" id="expander" className="navbar-footer">
         <i className="icofont-rounded-double-right"></i>
       </a>
+      <ToastContainer />
     </nav>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import LineCharts from "../../charts/LineChart";
 
-function BottomChart() {
+function BottomChart({ user }) {
   return (
     <div className="bottomBox">
       <div className="spentTime">
@@ -16,7 +16,7 @@ function BottomChart() {
         <div className="profileContainer">
           <div className="profileImage"></div>
           <div className="profileInfo">
-            <span className="name">Olashina Quadri</span>
+            <span className="name">{`${user.firstname} ${user.lastname}`}</span>
             <span className="title">Web Developer</span>
           </div>
         </div>

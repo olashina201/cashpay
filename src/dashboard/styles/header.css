@@ -24,35 +24,21 @@ header {
 
 section[role="search"] {
     background-color: var(--ghost-white);
-    padding: 1em 1.2em;
+    padding: 1px 0.2em;
     border-radius: 1em;
     font-size: .75rem;
     width: 100%;
 }
 
-section[role="search"] input {
+section[role="search"] p {
     border: none;
     background: none;
     margin-left: 0.5em;
     outline: none;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     width: 100%;
     -webkit-appearance: none;
-}
-
-section[role="search"] input::placeholder {
-    color: var(--placeholder);
-}
-
-section[role="search"] i {
-    color: var(--blue-pantone);
-    font-weight: bold;
-}
-
-.form-inline {
-    display: flex;
-    align-items: center;
 }
 
 section[role="application"] {

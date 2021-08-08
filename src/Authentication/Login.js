@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 import axios from "axios";
 import "./authentication.css";
 
 function Login() {
-  console.log()
+  const history = useHistory();
   const [loginData, setLoginData] = useState({
     email: "",
     password: ""
@@ -15,11 +16,10 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(loginData);
-    axios.post("http://localhost:5000/api/login", loginData)
+    axios.post("http://localhost:5000/api/signin", loginData)
     .then((res) => {
-      console.log(res)
-      window.location = "/dashboard"
+      window.localStorage.setItem("token", res.data);
+      history.push("/dashboard");
   }).catch((error) => {
     console.log(error)
   })

@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { AiOutlineTransaction } from "react-icons/ai";
 
 const Section = styled.section`
@@ -65,11 +67,12 @@ const Button = styled.button`
 `;
 
 function TransactionList() {
+  const notify = () => toast("opps, still under development !");
   return (
     <Section>
       <Head>
         <h3>Recent Transactions</h3>
-        <Button>Download PDF</Button>
+        <Button onClick={notify}>Download PDF</Button>
       </Head>
       <FlexContainer>
         <Icon><AiOutlineTransaction /></Icon>
@@ -155,6 +158,7 @@ function TransactionList() {
           <Text>11:46am</Text>
         </Date>
       </FlexContainer>
+      <ToastContainer />
     </Section>
   );
 }

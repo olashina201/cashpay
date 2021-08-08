@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BsForwardFill } from "react-icons/bs";
 import styled from "styled-components";
 import Send from "../containers/Send";
@@ -42,9 +44,10 @@ const Span = styled.span`
 
 function PaymentList() {
   const [openModal, setOpenModal] = useState(false)
+  const notify = () => toast("opps, still under development !");
   return (
     <Section>
-      <a onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
       <FlexContainer>
         <img style={{ width: "35px" }} src={sendMoney} />
         <Span>
@@ -53,8 +56,8 @@ function PaymentList() {
         <i><BsForwardFill /></i>
       </FlexContainer>
       </a>
-      <a onClick={() => {setOpenModal(true)}}>
-      <FlexContainer onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
+      <FlexContainer>
         <img style={{ width: "35px" }} src={wallet} />
         <Span>
           <h5>Fund Wallet</h5>
@@ -62,7 +65,7 @@ function PaymentList() {
         <i><BsForwardFill /></i>
       </FlexContainer>
       </a>
-      <a onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
       <FlexContainer>
         <img style={{ width: "35px" }} src={withdrawal} />
         <Span>
@@ -71,7 +74,7 @@ function PaymentList() {
         <i><BsForwardFill /></i>
       </FlexContainer>
       </a>
-      <a onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
       <FlexContainer>
         <img style={{ width: "35px" }} src={bill} />
         <Span>
@@ -80,7 +83,7 @@ function PaymentList() {
         <i><BsForwardFill /></i>
       </FlexContainer>
       </a>
-      <a onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
       <FlexContainer>
         <img style={{ width: "35px" }} src={cable} />
         <Span>
@@ -89,7 +92,7 @@ function PaymentList() {
         <i><BsForwardFill /></i>
       </FlexContainer>
       </a>
-      <a onClick={() => {setOpenModal(true)}}>
+      <a onClick={notify}>
       <FlexContainer>
         <img style={{ width: "35px" }} src={topup} />
         <Span>
@@ -99,6 +102,7 @@ function PaymentList() {
       </FlexContainer>
       </a>
       { openModal && <Send closeModal={setOpenModal} /> }
+      <ToastContainer />
     </Section>
   );
 }

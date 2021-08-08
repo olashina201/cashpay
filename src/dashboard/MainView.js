@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
+import jwtDecode from "jwt-decode";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Money from "./Money";
@@ -11,6 +11,10 @@ import Statistics from "./Statistics";
 import BottomChart from "./components/BottomChart";
 
 function MainView() {
+  const [user, setUser] = useState([])
+  console.log(user)
+
+
   useEffect(() => {
     document
       .getElementsByClassName("tab")[0]
@@ -45,13 +49,17 @@ function MainView() {
     }
   }, []);
 
+  function getCurrentUser() {
+    try {
+        const token = localStorage.getItem("token");
+        return jwtDecode(token);
+    } catch (error) {
+        return null;
+    }
+  }
+
   useEffect(() => {
-    axios.get("http://localhost:5000/api/profile")
-    .then((res) => {
-      console.log(res.data)
-    }).catch((error) => {
-      console.log(error)
-    })
+    setUser(getCurrentUser());
   }, [])
 
   return (
@@ -59,13 +67,13 @@ function MainView() {
       <NavBar />
       <main>
         <div className="mainRadiusTop"></div>
-        <Header />
+        <Header user = {user} />
         <Tab />
         <div className="wrapper">
           <section role="region">
             <Money />
             <Statistics />
-            <BottomChart />
+            <BottomChart user = {user} />
           </section>
 
           <Aside />
